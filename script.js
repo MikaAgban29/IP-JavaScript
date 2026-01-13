@@ -11,7 +11,7 @@ smallCups.forEach((cup, idx)=> {
 
 function highlightCups(idx){
   if (idx===7 && smallCups[idx].classList.contains("ful1")) idx--;
-else if(smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementsibling.classList.contains('full')) {
+else if(smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
 idx--
 }
   
@@ -21,33 +21,30 @@ if(idx2 <= idx) {
 } else {
   cup.classList.remove('full')
 })
-updateBigCup()
-  
-function updateBigcup(){
-const fullCups = document.querySelectorAll('.cup-small.full'),length
-const totalCups = smalCups. length
-})
   
 updateBigCup()
+
 }
-function updateBigCup(){
-const fullCups = document.querySelectorAll('.cup-smal1.full').length
-const totalCups = smallCups.length
+  
+function updateBigcup() {
+const fullCups = document.querySelectorAll('.cup-small.full'),length
+const totalCups = smallCups. length
+
   
 if(fullCups === 0) {
 percentage.style.visibility -'hidden'
 percentage.style.height = 0
 } else {
-percentage.style.visibility ='visible
-percentage.style.height =${fullcups / totalcups* 330}px'
+percentage.style.visibility ='visible'
+percentage.style.height = '${fullcups / totalcups * 330}px'
 percentage.innerText =`${fullcups / totalCups * 100}%
 }
 
 if(fullCups === totalCups) {
 remained.style.visibility ='hidden'
 remained.style.height = 0
-else {
-remained.style.visibility ='visible'
-liters.innerText = '${2 - (250 * fullCups / 1000)}L'
+} else {
+remained.style.visibility = 'visible'
+liters.innerText = '${2 - (250 - (250 * fullCups / 1000)}L'
 }
 }
